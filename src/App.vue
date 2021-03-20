@@ -1,8 +1,24 @@
 <template>
     <div class="p-5">
+    <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <h2>Hi! my name is Jee Jin. Welcome to my portfolio site!</h2>
     <p>This is a work in progress</p>
-  
+
+    <div class="row">
+      <div class="col-2 d-inline-flex flex-column">
+        <a href="">Design Case Studies</a>
+        <a href="">Developer</a>
+        <a href="">Training</a>
+        <a href="">Creative</a>
+      </div>
+
+      <div class="col-10 bg-primary">
+        Content
+      </div>
+    </div>
+
+
+
     <!-- <h2>Case Study</h2>
     <ul>
       <li><a target="_blank" href="opogo.html">Opogo Case Study</a></li>
