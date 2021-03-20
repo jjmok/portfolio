@@ -9,11 +9,34 @@ import Training from "../src/components/Training.vue";
 const history = createWebHistory();
 
 const routes = [
-  { path: '/', redirect: '/case-study' },
-  { path: "/creative", component: Creative },
-  { path: "/case-study", component: CaseStudy },
-  { path: "/developer", component: Developer },
-  { path: "/training", component: Training },
+  { 
+    path: '/',
+    redirect: '/case-study' 
+  },
+  { 
+    path: "/creative",
+    name: "Creative",
+    component: Creative 
+  },
+  { 
+    path: "/case-study",
+    name: "Case Study",
+    component: CaseStudy 
+  },
+  { 
+    path: "/developer",
+    name: "Developer",
+    component: Developer 
+  },
+  { 
+    path: "/training",
+    name: "Training",
+    component: Training 
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    redirect: '/case-study'
+  }
 ];
 
 const router = createRouter({ history, routes });

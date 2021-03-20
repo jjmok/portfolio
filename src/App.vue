@@ -6,14 +6,14 @@
 
     <div class="row">
       <div class="col-2 d-inline-flex flex-column">
-        <router-link to="/case-study">Case Study</router-link>
-        <router-link to="/developer">Developer</router-link>
-        <router-link to="/training">Training</router-link>
-        <router-link to="/creative">Creative</router-link>
+        <router-link :to="{ name: 'Case Study' }">Case Study</router-link>
+        <router-link :to="{ name: 'Developer' }">Developer</router-link>
+        <router-link :to="{ name: 'Training' }">Training</router-link>
+        <router-link :to="{ name: 'Creative' }">Creative</router-link>
 
       </div>
 
-      <div class="col-10 bg-primary">
+      <div class="col-10 bg-primary text-white p-5">
         <router-view/>
       </div>
 
