@@ -21,6 +21,10 @@ defineProps({
 })
 
 const state = reactive({ count: 0 })
+
+setup() {
+  console.log("hellow world");
+}
 </script>
 
 <style scoped>

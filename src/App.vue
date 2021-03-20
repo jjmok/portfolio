@@ -6,18 +6,20 @@
 
     <div class="row">
       <div class="col-2 d-inline-flex flex-column">
-        <a href="">Design Case Studies</a>
-        <a href="">Developer</a>
-        <a href="">Training</a>
-        <a href="">Creative</a>
+        <router-link to="/case-study">Case Study</router-link>
+        <router-link to="/developer">Developer</router-link>
+        <router-link to="/training">Training</router-link>
+        <router-link to="/creative">Creative</router-link>
+
       </div>
 
       <div class="col-10 bg-primary">
-        Content
+        <router-view/>
       </div>
+
+      <!-- <case-study/> -->
+      
     </div>
-
-
 
     <!-- <h2>Case Study</h2>
     <ul>
@@ -52,22 +54,26 @@
 </template>
 
 <script setup>
+// import CaseStudy from './components/CaseStudy.vue'
 // import HelloWorld from './components/HelloWorld.vue'
 
 // This starter template is using Vue 3 experimental <script setup> SFCs
 // Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
 </script>
 
-<style>
+<style lang="scss">
   .img-500 {
     width: 500px;
   }
 
-  body { font-family: 'Poppins', sans-serif; }
+  body { 
+    font-family: 'Poppins', sans-serif; 
+  }
 
   h1,h2,h3,h4,h5,h6 {
     font-family: 'Rubik', sans-serif;
   }
+  
   .img-500 {
     width: 500px;
   }
